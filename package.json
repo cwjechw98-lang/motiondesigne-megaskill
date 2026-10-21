@@ -1,0 +1,19 @@
+{
+  "name": "motion-design-megaskill",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Portable motion-design skill, creative knowledge base and adaptive preset gallery",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test",
+    "validate": "node scripts/validate.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cwjechw98-lang/motiondesigne-megaskill.git"
+  }
+}

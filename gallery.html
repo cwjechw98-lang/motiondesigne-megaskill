@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="description" content="Атлас визуальных направлений для оригинальных motion-роликов. Выберите язык, глубину и добавьте свой бриф.">
+  <title>Атлас движения — Motion Design Megaskill</title>
+  <link rel="stylesheet" href="gallery.css">
+  <script src="catalog.js" defer></script>
+  <script src="gallery.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">К содержимому</a>
+  <header class="masthead shell">
+    <a class="wordmark" href="gallery.html" aria-label="Атлас движения — главная">АТЛАС / ДВИЖЕНИЯ<span>MOTION DESIGN MEGASKILL</span></a>
+    <span class="edition">Визуальный язык.<br>Не готовый сценарий.</span>
+  </header>
+  <main id="main" class="shell">
+    <section class="intro" aria-labelledby="page-title">
+      <p class="eyebrow">Материал для собственной режиссуры</p>
+      <h1 id="page-title">Сначала — язык.<br><em>Движение — ваше.</em></h1>
+      <div class="intro-bottom"><p>Выберите характер изображения, добавьте глубину и задачу. Получится отправная точка для оригинального ролика — не копия чужой работы.</p><span class="preview-note">Все изображения — статические превью.<br>Они не демонстрируют анимацию.</span></div>
+      <p class="free-guidance"><strong>Без пресета:</strong> начните с идеи, выберите один визуальный принцип и проверьте его на коротком этюде. <a href="references/creative-grammar.md">Открыть творческую грамматику ↗</a></p>
+    </section>
+    <div class="tabs" role="tablist" aria-label="Способ создания">
+      <button id="tab-library" role="tab" aria-selected="true" aria-controls="panel-library" tabindex="0">Библиотека стилей</button>
+      <button id="tab-free" role="tab" aria-selected="false" aria-controls="panel-free" tabindex="-1">Без пресета <span aria-hidden="true">↗</span></button>
+    </div>
+    <section id="panel-library" role="tabpanel" aria-labelledby="tab-library">
+      <div class="filters">
+        <label class="search-field"><span>Найти направление</span><input id="search" type="search" placeholder="Название, материал, настроение…" autocomplete="off"></label>
+        <label><span>Категория</span><select id="category"><option value="">Все категории</option></select></label>
+        <label><span>Коллекция</span><select id="origin"><option value="">Все направления</option><option value="foundations">Классика</option><option value="explorations">Эксперимент</option></select></label>
+      </div>
+      <div class="collection-heading"><h2>Направления</h2><p id="result-count" role="status" aria-live="polite"></p></div>
+      <div id="gallery" class="gallery"></div>
+      <div id="empty" class="empty" hidden><h3>Не нашлось такого направления</h3><p>Попробуйте другое слово или уберите ограничения.</p><button id="reset" class="button secondary">Сбросить фильтры</button></div>
+      <p id="catalog-error" class="notice" hidden>Каталог пока недоступен. Рядом с этой страницей нужен catalog.js с данными window.MOTION_LIBRARY. Свободная композиция доступна во вкладке «Без пресета».</p>
+    </section>
+    <section id="panel-free" role="tabpanel" aria-labelledby="tab-free" hidden>
+      <div class="free-layout"><div class="free-editorial"><p class="eyebrow">Не выбирать из готового</p><h2>Соберите свой<br><em>визуальный язык.</em></h2><p>Пресет — только удобная точка входа. Можно начать с идеи и выстроить формы, материал, типографику, свет, камеру и ритм под неё.</p><p>Свободная композиция опирается на <a href="references/creative-grammar.md">творческую грамматику</a>: сначала смысл и бриф, затем выразительные приёмы. Здесь нет зашитого фильма, обязательной последовательности сцен или назначенной длительности.</p><p class="muted">Кнопки только копируют текст или передают черновик явно подключённому хосту. Генерация и отправка в чат не запускаются.</p></div><div id="free-composer" class="composer"></div></div>
+    </section>
+  </main>
+  <footer class="shell footer"><span>Не повторяйте кадр. Развивайте принцип.</span><span>Изображение ≠ движение</span></footer>
+  <dialog id="style-dialog" aria-labelledby="dialog-title">
+    <div class="dialog-top"><span class="eyebrow">Направление / детали</span><button id="close-dialog" class="button secondary" autofocus>Закрыть <span aria-hidden="true">×</span></button></div>
+    <div class="dialog-body"><figure class="full-preview"><img id="dialog-image" alt=""><figcaption><span>Статическое превью стиля</span><span id="image-kind"></span></figcaption></figure><div class="dialog-layout"><div class="style-detail"><p id="dialog-origin" class="eyebrow"></p><h2 id="dialog-title"></h2><p id="dialog-description"></p><p id="dialog-disclaimer" class="notice"></p><div id="dialog-sources"></div></div><div id="dialog-composer" class="composer"></div></div></div>
+  </dialog>
+  <noscript><p class="shell notice">Для поиска и сборки промпта включите JavaScript. Каталог хранится локально; сетевой доступ не требуется.</p></noscript>
+</body>
+</html>

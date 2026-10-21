@@ -1,0 +1,445 @@
+window.MOTION_LIBRARY = {
+  "version": 1,
+  "styles": [
+    {
+      "id": "01-handdrawn",
+      "name": "Живая линия",
+      "category": "Рисунок",
+      "description": "Построй сцену несколькими неровными линиями на светлом поле. Штрих возникает вслед за действием: намечает путь, превращается в объект и оставляет осмысленный след. Небольшая разница между повторными контурами даёт ручной характер; не подменяй рисунок обводкой печатного шрифта.",
+      "tags": [
+        "рисунок",
+        "линия",
+        "ручная работа"
+      ],
+      "image": "assets/presets/01-handdrawn.svg",
+      "origin": "original",
+      "collection": "foundations",
+      "previewKind": "authored-svg",
+      "sources": [
+        "https://vizavi.academy/lesson-motion/"
+      ]
+    },
+    {
+      "id": "02-paper",
+      "name": "Бумажная сцена",
+      "category": "Материалы",
+      "description": "Используй вырезки, сгибы и перекрывающиеся цветные листы. Контактные тени показывают, какой слой лежит выше. Пусть смысл рождается из сборки, раскрытия или переворачивания бумаги; жёсткие части сохраняют форму, сгибаются только нужные участки.",
+      "tags": [
+        "бумага",
+        "коллаж",
+        "слои"
+      ],
+      "image": "assets/presets/02-paper.svg",
+      "origin": "original",
+      "collection": "foundations",
+      "previewKind": "authored-svg",
+      "sources": [
+        "https://vizavi.academy/lesson-motion/"
+      ]
+    },
+    {
+      "id": "03-vector",
+      "name": "Геометрический вектор",
+      "category": "Графика",
+      "description": "Собери ясную композицию из простых заливок и ограниченной палитры. Изменение положения, размера и формы объясняет действие, а не заполняет паузу. Зафиксируй оси и порядок появления; ровные контуры и свободное пространство удерживают читаемость.",
+      "tags": [
+        "вектор",
+        "геометрия",
+        "система"
+      ],
+      "image": "assets/presets/03-vector.svg",
+      "origin": "original",
+      "collection": "foundations",
+      "previewKind": "authored-svg",
+      "sources": [
+        "https://vizavi.academy/lesson-motion/"
+      ]
+    },
+    {
+      "id": "04-comic",
+      "name": "Графический панч",
+      "category": "Графика",
+      "description": "Построй кадр как выразительную комикс-панель: крупный силуэт, контрастные плашки и уверенная обводка. До удара или прыжка дай подготовку, затем короткое главное действие и догоняющий акцент. Слова-эффекты помогают событию, но не закрывают героя.",
+      "tags": [
+        "комикс",
+        "панч",
+        "пружина"
+      ],
+      "image": "assets/presets/04-comic.svg",
+      "origin": "original",
+      "collection": "foundations",
+      "previewKind": "authored-svg",
+      "sources": [
+        "https://vizavi.academy/lesson-motion/"
+      ]
+    },
+    {
+      "id": "05-pixel",
+      "name": "Пиксельная механика",
+      "category": "Рисунок",
+      "description": "Выбери единую низкоразрешённую сетку и палитру. Движение строится сменой выразительных поз и целочисленными сдвигами, масштабирование сохраняет резкие границы. Используй игровые правила появления, контакта и результата; не смешивай разные размеры пикселя без причины.",
+      "tags": [
+        "пиксели",
+        "игра",
+        "позы"
+      ],
+      "image": "assets/presets/05-pixel.svg",
+      "origin": "original",
+      "collection": "foundations",
+      "previewKind": "authored-svg",
+      "sources": [
+        "https://vizavi.academy/lesson-motion/"
+      ]
+    },
+    {
+      "id": "06-typography",
+      "name": "Слова как действие",
+      "category": "Типографика",
+      "description": "Сделай главным героем мысль, выраженную короткой фразой. Иерархия размера, веса и положения ведёт чтение, а появление слов раскрывает аргумент. Удерживай смысловые состояния; маски и трансформации выбирай по значению слов, а не одинаково для всей строки.",
+      "tags": [
+        "типографика",
+        "текст",
+        "ритм"
+      ],
+      "image": "assets/presets/06-typography.svg",
+      "origin": "original",
+      "collection": "foundations",
+      "previewKind": "authored-svg",
+      "sources": [
+        "https://vizavi.academy/lesson-motion/"
+      ]
+    },
+    {
+      "id": "07-neon",
+      "name": "Световая схема",
+      "category": "Графика",
+      "description": "Рисуй информацию светящимися траекториями на тёмном поле. Импульс идёт по связи, открывает узел и оставляет стабильный результат. Несколько оттенков задают роли данных; свечение поддерживает контур, не превращает детали в белое пятно.",
+      "tags": [
+        "неон",
+        "связи",
+        "свет"
+      ],
+      "image": "assets/presets/07-neon.svg",
+      "origin": "original",
+      "collection": "foundations",
+      "previewKind": "authored-svg",
+      "sources": [
+        "https://vizavi.academy/lesson-motion/"
+      ]
+    },
+    {
+      "id": "08-premium-3d",
+      "name": "Скульптурный объект",
+      "category": "Пространство",
+      "description": "Раскрой характер одного объёмного героя через силуэт, материал и свет. Движение показывает новую грань или функцию, окружение даёт масштаб и контакт. Чередуй выразительный пространственный жест с читаемым опорным кадром; отражения не заменяют содержание.",
+      "tags": [
+        "объём",
+        "материал",
+        "предмет"
+      ],
+      "image": "assets/presets/08-premium-3d.svg",
+      "origin": "original",
+      "collection": "foundations",
+      "previewKind": "authored-svg",
+      "sources": [
+        "https://vizavi.academy/lesson-motion/"
+      ]
+    },
+    {
+      "id": "09-saas",
+      "name": "Продуктовая история",
+      "category": "Сценарии",
+      "description": "Покажи, как конкретное действие пользователя меняет состояние продукта и приводит к понятной пользе. Курсор или подсветка ведёт внимание, интерфейс остаётся читаемым. Сохраняй последовательность действия и результата; неизвестные возможности продукта не выдумывай.",
+      "tags": [
+        "интерфейс",
+        "продукт",
+        "объяснение"
+      ],
+      "image": "assets/presets/09-saas.svg",
+      "origin": "original",
+      "collection": "foundations",
+      "previewKind": "authored-svg",
+      "sources": [
+        "https://vizavi.academy/lesson-motion/"
+      ]
+    },
+    {
+      "id": "13-swiss-grid",
+      "name": "Швейцарская сетка",
+      "category": "Типографика",
+      "description": "Стиль — швейцарский модернизм: строгая модульная сетка, крупный нейтральный гротеск, чёрный, белый и один красный акцент. Блоки перемещаются вдоль колонок, строки раскрываются масками; ритм строится на контрасте короткого сдвига и читаемой паузы. Без пружин и декоративного шума.",
+      "tags": [
+        "сетка",
+        "брендинг",
+        "точность"
+      ],
+      "sources": [
+        "https://www.animography.net/",
+        "https://tympanus.net/codrops/"
+      ],
+      "image": "assets/presets/13-swiss-grid.webp",
+      "origin": "original",
+      "previewKind": "generated-style-illustration",
+      "collection": "explorations"
+    },
+    {
+      "id": "14-clay",
+      "name": "Пластилиновый мир",
+      "category": "Материалы",
+      "description": "Стиль — пластилиновый 3D: матовые округлые формы, следы ручной лепки, тёплая пастель и контактные тени. Персонаж сначала сжимается перед прыжком, вытягивается в полёте и догоняет корпус мягкими деталями; объём сохраняется. Не заменяй характер материала одинаковым bounce у всех объектов.",
+      "tags": [
+        "пластилин",
+        "тактильность",
+        "персонаж"
+      ],
+      "sources": [
+        "https://motionographer.com/",
+        "https://www.behance.net/search/projects?search=motion%20design"
+      ],
+      "image": "assets/presets/14-clay.webp",
+      "origin": "original",
+      "previewKind": "generated-style-illustration",
+      "collection": "explorations"
+    },
+    {
+      "id": "15-isometric",
+      "name": "Изометрический мир",
+      "category": "Пространство",
+      "description": "Стиль — изометрическая диорама: параллельные оси, миниатюрный мир на платформе, ясные силуэты и ограниченная палитра. При неподвижной камере внутри работают транспорт, лифты и механизмы; появление объектов идёт по причинной цепочке. Сохраняй проекцию, не превращай её в случайный перспективный облёт.",
+      "tags": [
+        "изометрия",
+        "система",
+        "город"
+      ],
+      "sources": [
+        "https://dribbble.com/tags/motion-design",
+        "https://lottiefiles.com/"
+      ],
+      "image": "assets/presets/15-isometric.webp",
+      "origin": "original",
+      "previewKind": "generated-style-illustration",
+      "collection": "explorations"
+    },
+    {
+      "id": "16-type-extrusion",
+      "name": "Объёмная типографика",
+      "category": "Типографика",
+      "description": "Главный герой — слово с настоящей 3D-экструзией: видимые боковины, насыщенный цвет и направленный свет. Буквы раскрывают толщину поворотом, проходят мимо камеры и собираются в читаемую фразу. Держи смысловой кадр без движения; не деформируй буквы до потери чтения.",
+      "tags": [
+        "буквы",
+        "экструзия",
+        "масштаб"
+      ],
+      "sources": [
+        "https://www.animography.net/",
+        "https://dribbble.com/tags/kinetic-typography"
+      ],
+      "image": "assets/presets/16-type-extrusion.webp",
+      "origin": "original",
+      "previewKind": "generated-style-illustration",
+      "collection": "explorations"
+    },
+    {
+      "id": "17-blueprint",
+      "name": "Инженерный чертёж",
+      "category": "Графика",
+      "description": "Стиль — инженерный чертёж: тонкие светлые линии на синем поле, сетка, выноски и условные размеры. Сначала строятся опорные оси, затем контуры и узлы; детали расходятся в разнесённый вид и собираются обратно. Цифры демонстрационные, если не даны данные; не выдавай рисунок за рабочую техническую документацию.",
+      "tags": [
+        "чертёж",
+        "сборка",
+        "линия"
+      ],
+      "sources": [
+        "https://tympanus.net/codrops/",
+        "https://motionarray.com/"
+      ],
+      "image": "assets/presets/17-blueprint.webp",
+      "origin": "original",
+      "previewKind": "generated-style-illustration",
+      "collection": "explorations"
+    },
+    {
+      "id": "18-risograph",
+      "name": "Ризограф",
+      "category": "Материалы",
+      "description": "Стиль — ризограф: бумажное зерно, два плашечных цвета, полутон и небольшой сдвиг приводки. Цветовые слои последовательно накладываются, перекрытия меняют тон, акцент печатается отдельным ударом. Фактура привязана к носителю, а не прыгает случайным шумом; без глянца и свечения.",
+      "tags": [
+        "печать",
+        "зерно",
+        "дуотон"
+      ],
+      "sources": [
+        "https://www.behance.net/search/projects?search=motion%20design",
+        "https://motionographer.com/"
+      ],
+      "image": "assets/presets/18-risograph.webp",
+      "origin": "original",
+      "previewKind": "generated-style-illustration",
+      "collection": "explorations"
+    },
+    {
+      "id": "19-y2k",
+      "name": "Y2K: хром и стекло",
+      "category": "Материалы",
+      "description": "Стиль — ретрофутуризм Y2K: хромовые буквы, стеклянные пузыри, иридесцентные блики и тонкая цифровая сетка. Камера раскрывает отражения одним проездом, объекты вращаются с разной инерцией, световой акцент подчёркивает смену состояния. Не смешивай все эффекты сразу; текст остаётся главным.",
+      "tags": [
+        "хром",
+        "Y2K",
+        "ретрофутуризм"
+      ],
+      "sources": [
+        "https://dribbble.com/tags/motion-design",
+        "https://tympanus.net/codrops/tag/webgl/"
+      ],
+      "image": "assets/presets/19-y2k.webp",
+      "origin": "original",
+      "previewKind": "generated-style-illustration",
+      "collection": "explorations"
+    },
+    {
+      "id": "20-stop-motion",
+      "name": "Тактильный стоп-моушен",
+      "category": "Материалы",
+      "description": "Стиль — кукольный стоп-моушен: войлок, ткань, картон и ручная миниатюра под тёплым практическим светом. Действие складывается из удержанных поз и небольших покадровых сдвигов; материал и тени сохраняют непрерывность. Не добавляй видимую руку аниматора, если этого не требует сюжет.",
+      "tags": [
+        "куклы",
+        "покадрово",
+        "уют"
+      ],
+      "sources": [
+        "https://motionographer.com/",
+        "https://www.behance.net/search/projects?search=motion%20design"
+      ],
+      "image": "assets/presets/20-stop-motion.webp",
+      "origin": "original",
+      "previewKind": "generated-style-illustration",
+      "collection": "explorations"
+    },
+    {
+      "id": "21-glitch",
+      "name": "Управляемый глитч",
+      "category": "Движение",
+      "description": "Стиль — цифровой сбой: локальное RGB-расслоение, полосы смещения, блоки сжатия и след предыдущего кадра. Короткий сбой подготавливает смысловую смену, после него изображение стабилизируется. Без постоянного мерцания: избегай частых контрастных вспышек, сохраняй читаемые паузы и спокойную альтернативу.",
+      "tags": [
+        "глитч",
+        "датамош",
+        "разрыв"
+      ],
+      "sources": [
+        "https://tympanus.net/codrops/tag/glitch/"
+      ],
+      "image": "assets/presets/21-glitch.webp",
+      "origin": "original",
+      "previewKind": "generated-style-illustration",
+      "collection": "explorations"
+    },
+    {
+      "id": "22-physics",
+      "name": "Материал и физика",
+      "category": "Движение",
+      "description": "Стиль — физическая композиция: резина, ткань и твёрдые тела имеют разный вес, трение и упругость. Покажи подготовку, контакт, деформацию и затухание; вторичные детали догоняют основной импульс. Проверяй столкновения и сохранение массы; набор случайно летающих шаров не заменяет постановку.",
+      "tags": [
+        "физика",
+        "вес",
+        "деформация"
+      ],
+      "sources": [
+        "https://tympanus.net/codrops/tag/webgl/",
+        "https://motionographer.com/"
+      ],
+      "image": "assets/presets/22-physics.webp",
+      "origin": "original",
+      "previewKind": "generated-style-illustration",
+      "collection": "explorations"
+    },
+    {
+      "id": "23-data",
+      "name": "Данные в движении",
+      "category": "Сценарии",
+      "description": "Стиль — редакционная инфографика: точные оси, нейтральная сетка и один акцент. Данные раскрываются в порядке вопрос → сравнение → вывод; счётчики и графики движутся синхронно, подписи остаются неподвижными для чтения. Используй только предоставленные или явно демонстрационные цифры, не искажай масштаб ради эффекта.",
+      "tags": [
+        "данные",
+        "графики",
+        "объяснение"
+      ],
+      "sources": [
+        "https://lottiefiles.com/",
+        "https://dribbble.com/tags/motion-design"
+      ],
+      "image": "assets/presets/23-data.webp",
+      "origin": "original",
+      "previewKind": "generated-style-illustration",
+      "collection": "explorations"
+    },
+    {
+      "id": "24-type-grid",
+      "name": "Кинетическая матрица",
+      "category": "Типографика",
+      "description": "Стиль — типографическая матрица: буквы и плашки занимают модульные ячейки, чёрный и белый дополнены одним цветом. Волна перемещения проходит по рядам, одно слово нарушает сетку и становится героем, затем структура собирается заново. Задай один порядок задержек; не двигай каждую букву независимо.",
+      "tags": [
+        "матрица",
+        "ритм",
+        "буквы"
+      ],
+      "sources": [
+        "https://www.animography.net/",
+        "https://dribbble.com/tags/kinetic-typography"
+      ],
+      "image": "assets/presets/24-type-grid.webp",
+      "origin": "original",
+      "previewKind": "generated-style-illustration",
+      "collection": "explorations"
+    }
+  ],
+  "depths": [
+    {
+      "id": "10-2d",
+      "name": "2D",
+      "description": "Плоская сцена: ясные силуэты, перекрытия и движение вдоль плоскости. Пространственный эффект не обязателен.",
+      "image": "assets/presets/10-2d.svg",
+      "previewKind": "authored-svg"
+    },
+    {
+      "id": "11-25d",
+      "name": "2,5D",
+      "description": "Раздели композицию на планы. Перекрытия, контактные тени и разная скорость смещения создают глубину без настоящего объёмного объекта.",
+      "image": "assets/presets/11-25d.svg",
+      "previewKind": "authored-svg"
+    },
+    {
+      "id": "12-3d",
+      "name": "3D",
+      "description": "Построй объём со связанными гранями, светом и перспективой. Пространственное движение должно раскрывать форму или смысл, а не вращать камеру ради эффекта.",
+      "image": "assets/presets/12-3d.svg",
+      "previewKind": "authored-svg"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://vizavi.academy/lesson-motion/",
+      "title": "VIZAVI — источник вдохновения",
+      "access": "Общедоступные идеи техник; оригинальные тексты и превью не включены"
+    },
+    {
+      "url": "https://tympanus.net/codrops/",
+      "title": "Codrops",
+      "access": "Текстовые материалы и отдельно проверенное CSS Glitch demo"
+    },
+    {
+      "url": "https://motionographer.com/",
+      "title": "Motionographer",
+      "access": "Текст проектного разбора"
+    },
+    {
+      "url": "https://animography.net/",
+      "title": "Animography",
+      "access": "Описание подхода к анимации букв"
+    },
+    {
+      "url": "https://dribbble.com/tags/motion-design",
+      "title": "Dribbble",
+      "access": "Поисковая площадка для новых референсов, не утверждение о просмотре всех работ"
+    }
+  ],
+  "notice": "Все рецепты в этом пакете написаны самостоятельно. Векторные превью созданы для библиотеки; изображения экспериментальных направлений сгенерированы ИИ. Это статические примеры, не проверенные ролики. Сторонний архив и оригинальные изображения VIZAVI не включены."
+};

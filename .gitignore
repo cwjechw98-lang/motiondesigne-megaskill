@@ -1,0 +1,13 @@
+node_modules/
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+*.log
+coverage/
+dist/
+artifacts/
+integration-state.json
+user-presets/
+*.backup-*
