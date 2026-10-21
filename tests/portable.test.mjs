@@ -71,7 +71,9 @@ test('mid-copy failure preserves original target and removes staging', async t =
 });
 
 async function fixture(t) {
-  const base = await fs.mkdtemp(path.join(os.tmpdir(), 'motion-portable-'));
+  // macOS exposes TMPDIR through /var -> /private/var. These fixtures test
+  // ordinary physical directories; dedicated tests below still reject links.
+  const base = await fs.mkdtemp(path.join(await fs.realpath(os.tmpdir()), 'motion-portable-'));
   t.after(() => fs.rm(base, { recursive: true, force: true }));
   const source = path.join(base, 'source');
   await fs.mkdir(path.join(source, 'assets/presets'), { recursive: true });
@@ -87,6 +89,11 @@ async function fixture(t) {
   await fs.writeFile(path.join(source, 'unlisted.txt'), 'not bundled');
   return { base, source, target: path.join(base, 'installed'), catalog };
 }
+
+test('ordinary fixture root is a physical path, not a system temp alias', async t => {
+  const { base } = await fixture(t);
+  assert.equal(base, await fs.realpath(base));
+});
 
 test('installs only allowlisted bundle; import has no CLI side effects', async t => {
   const { source, target } = await fixture(t);
